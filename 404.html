@@ -6,12 +6,13 @@
 <title>Not found</title>
 <meta name="robots" content="noindex">
 <script>
-  // GitHub Pages paths are case-sensitive: the project site lives at /CourseForge/.
-  // Any other spelling of it - /courseforge, /Courseforge/quick-start/ - lands here
-  // and is sent on, keeping the rest of the address.
+  // GitHub Pages paths are case-sensitive: the project sites live at /CourseForge/ and
+  // /Flash2Svg/. Any other spelling of them - /courseforge, /flash2svg/quick-start.html -
+  // lands here and is sent on, keeping the rest of the address.
   (function () {
-    var m = location.pathname.match(/^\/courseforge(?=\/|$)(.*)$/i);
-    if (m) location.replace('/CourseForge' + (m[1] || '/') + location.search + location.hash);
+    var sites = { courseforge: '/CourseForge', flash2svg: '/Flash2Svg' };
+    var m = location.pathname.match(/^\/(courseforge|flash2svg)(?=\/|$)(.*)$/i);
+    if (m) location.replace(sites[m[1].toLowerCase()] + (m[2] || '/') + location.search + location.hash);
   })();
 </script>
 <style>
@@ -24,8 +25,8 @@
 <body>
 <main>
 <h1>Not found</h1>
-<p>There is nothing at this address. Looking for the CourseForge documentation?</p>
-<p><a href="/CourseForge/">zcarecrow.github.io/CourseForge</a></p>
+<p>There is nothing at this address. Looking for documentation?</p>
+<p><a href="/CourseForge/">CourseForge</a> · <a href="/Flash2Svg/">Flash2SVG</a></p>
 </main>
 </body>
 </html>
