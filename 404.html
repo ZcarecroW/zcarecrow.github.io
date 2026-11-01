@@ -7,11 +7,11 @@
 <meta name="robots" content="noindex">
 <script>
   // GitHub Pages paths are case-sensitive: the project sites live at /CourseForge/,
-  // /Flash2Svg/ and /HighBazar/. Any other spelling of them - /courseforge, /flash2svg/quick-start.html -
+  // /Flash2Svg/, /HighBazar/ and /TTV-TTS/. Any other spelling of them - /courseforge, /flash2svg/quick-start.html -
   // lands here and is sent on, keeping the rest of the address.
   (function () {
-    var sites = { courseforge: '/CourseForge', flash2svg: '/Flash2Svg', highbazar: '/HighBazar' };
-    var m = location.pathname.match(/^\/(courseforge|flash2svg|highbazar)(?=\/|$)(.*)$/i);
+    var sites = { courseforge: '/CourseForge', flash2svg: '/Flash2Svg', highbazar: '/HighBazar', 'ttv-tts': '/TTV-TTS' };
+    var m = location.pathname.match(/^\/(courseforge|flash2svg|highbazar|ttv-tts)(?=\/|$)(.*)$/i);
     if (m) location.replace(sites[m[1].toLowerCase()] + (m[2] || '/') + location.search + location.hash);
   })();
 </script>
@@ -26,7 +26,7 @@
 <main>
 <h1>Not found</h1>
 <p>There is nothing at this address. Looking for documentation?</p>
-<p><a href="/CourseForge/">CourseForge</a> · <a href="/Flash2Svg/">Flash2SVG</a> · <a href="/HighBazar/">HighBazar</a></p>
+<p><a href="/CourseForge/">CourseForge</a> · <a href="/Flash2Svg/">Flash2SVG</a> · <a href="/HighBazar/">HighBazar</a> · <a href="/TTV-TTS/">TTV-TTS</a></p>
 </main>
 </body>
 </html>
